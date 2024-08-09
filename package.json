@@ -1,0 +1,25 @@
+{
+  "name": "hrm_playwright_automation",
+  "version": "1.0.0",
+  "description": "Web & MWeb Automation",
+  "main": "index.js",
+  "scripts": {
+    "runAll":"npx playwright test",
+    "runHeadlessMultipleBrowser": "npx playwright test loginScenario.spec.js",
+    "runHeadedMultipleBrowser": "npx playwright test loginScenario.spec.js --headed",
+    "runOnChromeHeaded": "npx playwright test loginScenario.spec.js --project=chromium --headed",
+    "runOnFirefoxHeaded": "npx playwright test loginScenario.spec.js --project=firefox --headed"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.44.1",
+    "@types/node": "^20.14.2",
+    "axios": "^0.27.2"
+  },
+  "dependencies": {
+    "appium": "^2.10.3",
+    "dotenv": "^16.3.1"
+  }
+}
